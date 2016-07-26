@@ -1,0 +1,84 @@
+$primary: #2c3e50;
+$secondary: #3498db;
+$font: "Open Sans", Helvetica, Arial, sans-serif;
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $primary;
+  font-family: $font;
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 970px;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  margin: 50px auto;
+
+  > h1 {
+    font-size: 4rem;
+  }
+}
+
+.button-container {
+  margin: 50px auto;
+
+  .button {
+    background-color: $secondary;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 40px;
+    outline: none;
+    width: 160px;
+
+    &:hover,
+    :active {
+      background-color: #295cb9;
+      outline: none;
+    }
+
+    &:nth-child(2) {
+      margin: 0 30px;
+    }
+  }
+}
+
+.result {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.favlist {
+  display: none;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      font-size: 1.6rem;
+      padding: 5px 0;
+      text-align: center;
+    }
+  }
+}

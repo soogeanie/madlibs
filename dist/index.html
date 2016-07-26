@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mad Libs</title>
+
+    <link href="stylesheets/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link href="stylesheets/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <h1>Sujin's Mad Libs Generator</h1>
+
+        <div class="row button-container">
+          <div class="col-xs-12">
+            <div class="buttons">
+              <button type="button" class="button" id="create-btn">Create new startup</button>
+              <button type="button" class="button" id="fav-btn">Favorite startup</button>
+              <button type="button" class="button" id="print-btn">Print favorites</button>
+            </div><!-- /.buttons -->
+          </div><!-- /.col-xs-12 -->
+        </div><!-- /.button-container -->
+
+        <div class="row result-container">
+          <div class="result">
+            <h1 id="result-content"></h1>
+          </div><!-- /.result -->
+
+          <div class="favlist" id="fav-list">
+            <h2>Favorite Startups</h2>
+
+            <ul id="fav-list-content"></ul><!-- /.fav-list -->
+          </div>
+        </div><!-- /.result-container -->
+      </main>
+    </div><!--/.wrapper -->
+
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
